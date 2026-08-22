@@ -1,0 +1,62 @@
+
+    <!DOCTYPE html>
+    <html lang="pt-BR">
+    <head>
+    <meta charset="UTF-8">
+    <title>Exemplo de Formulário</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>Formulário de Endereço</h1>
+        <button type="button" id="novo-endereco">Novo Endereço</button>
+
+    <!-- Inicio do formulario -->
+      <form id="formulario" class="oculto">
+        <h2>Dados do Endereço</h2>
+        <label>Cep:
+        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+           required /></label><br />
+         <div id="dados-endereco" class="oculto">
+        <label>Rua:
+        <input name="rua" type="text" id="rua" size="60" /></label><br />
+        <label>Bairro:
+        <input name="bairro" type="text" id="bairro" size="40" /></label><br />
+        <label>Cidade:
+        <input name="cidade" type="text" id="cidade" size="40" /></label><br />
+        <label>Estado:
+        <input name="uf" type="text" id="uf" size="2" /></label><br />
+        <label>Número:
+        <input name="numero" type="text" id="numero" size="8" /></label><br />
+        <label>Complemento:
+        <input name="complemento" type="text" id="complemento" size="40" /></label><br />
+        </div>
+        <label>
+          <input type="submit" value="Enviar" id="enviar">
+            <input type="reset" value="Limpar">
+        </label>
+
+      </form>
+      <section class="tabela-container">
+        <h2>Endereços cadastrados</h2>
+        <table>
+          <thead>
+              <tr>
+                  <th scope="col">CEP</th>
+                  <th scope="col">Rua</th>
+                  <th scope="col">Bairro</th>
+                  <th scope="col">Cidade</th>
+                  <th scope="col">Estado</th>
+                  <th scope="col">Número</th>
+                  <th scope="col">Complemento</th>
+              </tr>
+          </thead>
+          <tbody id="tabela-enderecos">
+          </tbody>
+        </table>
+      </section>
+      <script src="script.js"></script>
+    </body>
+
+    </html>
+    

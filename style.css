@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;     
+    font-family: sans-serif;
+}
+:root{
+    --c1: #faf0fd;
+    --c2: #e797f7;      
+    --c3: #b43ff8;      
+    --c4: #8c00ff;  
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: var(--c1);
+ }
+
+h1, h2 {
+    color: var(--c4);
+    margin-bottom: 16px;
+}
+
+button, input[type="submit"], input[type="reset"] {
+    border: 0;
+    border-radius: 8px;
+    background-color: var(--c4);
+    color: #ffffff;
+    cursor: pointer;
+    padding: 10px 16px;
+}
+
+button {
+    margin-bottom: 20px;
+}
+
+button:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: var(--c3);
+}
+
+ form{
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px var(--c2);
+    padding: 20px;
+    width: min(520px, calc(100% - 40px));
+    box-sizing: border-box;
+ }
+
+form label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+form input:not([type="submit"]):not([type="reset"]) {
+    min-width: 0;
+    flex: 1;
+}
+
+form > label:last-child {
+    justify-content: flex-end;
+}
+
+form input {
+    border-radius: 15px;
+    border: 1px solid var(--c2);
+    padding: 10px;
+    margin: 10px;
+}
+
+form input:focus {
+    outline: 2px solid var(--c3);
+    outline-offset: 1px;
+}
+.oculto{
+    display: none;
+}
+
+.tabela-container {
+    width: min(1100px, calc(100% - 40px));
+    margin: 28px 0;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px var(--c2);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    min-width: 760px;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th, td {
+    border-bottom: 1px solid var(--c2);
+    padding: 12px 10px;
+}
+
+th {
+    background-color: var(--c4);
+    color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--c1);
+}
