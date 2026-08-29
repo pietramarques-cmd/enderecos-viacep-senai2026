@@ -7,7 +7,7 @@
     --c1: #faf0fd;
     --c2: #e797f7;      
     --c3: #b43ff8;      
-    --c4: #8c00ff;  
+    --c4: #ba6cfa;  
 }
 body{
     display: flex;
@@ -109,6 +109,25 @@ th, td {
 th {
     background-color: var(--c4);
     color: #ffffff;
+}
+
+.btn-excluir {
+    background-color: #ffa5e4;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-excluir:hover {
+    background-color: #b31e81;
 }
 
 tbody tr:nth-child(even) {

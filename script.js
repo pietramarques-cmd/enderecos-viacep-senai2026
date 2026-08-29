@@ -11,6 +11,18 @@
         campoCep.focus();
     });
 
+    function criarBotaoExcluir(linha) {
+        const botaoExcluir = document.createElement('button');
+        botaoExcluir.type = 'button';
+        botaoExcluir.textContent = 'X';
+        botaoExcluir.className = 'btn-excluir';
+        botaoExcluir.setAttribute('aria-label', 'Excluir endereço');
+        botaoExcluir.addEventListener('click', function () {
+            linha.remove();
+        });
+        return botaoExcluir;
+    }
+
     formulario.addEventListener('submit', function (evento) {
         evento.preventDefault();
         if (dadosEndereco.classList.contains('oculto')) {
@@ -28,6 +40,9 @@
         [campoCep, rua, bairro, cidade, uf, campoNumero, complemento].forEach((campo) => {
             novaLinha.insertCell().textContent = campo.value;
         });
+
+        const celulaAcao = novaLinha.insertCell();
+        celulaAcao.appendChild(criarBotaoExcluir(novaLinha));
 
         formulario.reset();
         formulario.classList.add('oculto');
