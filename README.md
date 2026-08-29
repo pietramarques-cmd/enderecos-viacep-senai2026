@@ -2,11 +2,11 @@
 # Endereços de  ViaCep
 Agende para salvar pesquisas de endereços utilizando a API viaCEP e exportar para planilha CSV
 
-## Órgãos transversais
+## Tecnologias:
  - HTML, CSS, JS
  - VsCode
- - Co-piloto
+ - Copilot
  - API viacep
-## Como testar
+## Como testar:
  - Clonar código
  - Abra com o VS Code e execute o index.html com o Live Server
